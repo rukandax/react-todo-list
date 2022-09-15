@@ -1,0 +1,39 @@
+.component-input-field {
+  position: relative;
+  text-align: left;
+
+  input {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #999;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  input.block {
+    width: 100%;
+  }
+
+  label {
+    position: absolute;
+    pointer-events: none;
+    padding: 10px 12px;
+    color: #999;
+
+    top: 0;
+    left: 0;
+
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    background-color: #fff;
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    padding: 2px;
+  }
+}
